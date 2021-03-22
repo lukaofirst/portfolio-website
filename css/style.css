@@ -95,7 +95,6 @@ header{
     transition: left 0.5s ease;
     background: rgb(35,7,77);
     background: linear-gradient(180deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
-    color: white;
     cursor: pointer;
     font-size: 2rem;
     font-weight: 300;
@@ -162,11 +161,11 @@ header{
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background: #4286f4;
+    background: #c0c0c0;
     content: '';
     height: 0.4rem;
     width: 100%;
-    border-radius: 3px;
+    border-radius: 1.5px;
 }
   
 .menu-mobile .menu-mobile-nav-toggle-bar { margin-top: 0; }
@@ -201,10 +200,8 @@ header{
     width: 100%;
     margin: 0 auto;
     padding: 200px 0 150px 0;
-    background-image: url('../images/computer1.png');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
+    background: rgb(35,7,77);
+    background: linear-gradient(180deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
     position: relative;
 }
 
@@ -369,10 +366,8 @@ section.sobre {
 .bg2 {
     width: 100%;
     padding: 0 2%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-image: url('../images/computer2.png');
+    background: rgb(35,7,77);
+    background: linear-gradient(0deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
     position: relative;
 }
 
