@@ -6,7 +6,7 @@ window.onscroll = function(){
         if(prevScrollpos > currentScrollPos){
             document.getElementById('menu-desktop').style.top = "0";
         } else {
-            document.getElementById('menu-desktop').style.top = "-97.39px";
+            document.getElementById('menu-desktop').style.top = "-98.39px";
         }
             prevScrollpos = currentScrollPos;
 }
