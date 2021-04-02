@@ -59,6 +59,7 @@ nav #home{
     transition: top 0.3s;
     z-index: 999;
     font-weight: 300;
+    font-size: 18px;
     border-bottom: 3px solid #4286f4;
 }
 
@@ -171,24 +172,16 @@ nav #home{
 }
   
 .navbar-mobile.expanded { left: 0; }
-  
-.navbar-mobile ul.navbar-mobile {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+
+.navbar-mobile li {
     list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+} 
 
-.navbar-mobile ul.navbar-mobile li {
-    list-style-type: none;
-    margin: 20px;
-}
-
-.navbar-mobile ul.navbar-mobile li a {
+.navbar-mobile li a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -667,15 +660,5 @@ footer p i {
 
     .contato-wrapper-trad h5 {
         padding: 10px 0;
-    }
-}
-
-@media screen and (max-height: 360px) {
-    .menu-mobile ul.navbar-mobile li {
-        text-align: center;
-    }
-
-    .menu-mobile ul.navbar-mobile li:nth-of-type(1) {
-        margin-top: 100px;
     }
 }
