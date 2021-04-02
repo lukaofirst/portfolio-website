@@ -17,55 +17,45 @@
     <title>Lucas Macedo's Portfolio</title>
 </head>
 <body>
-    <header id="home">
 
-        <div id="menu-desktop" class="menu-desktop">
-
+    <!-- NAVBAR DESKTOP & MOBILE -->
+    <nav id="home">
+        
+        <div class="menu-desktop">
             <div onclick="refresh()">
-
                 <img src="images/lm_logo.png" alt="Logo">
-                
-            </div><!-- /.logo -->
-            
-            <nav>
+            </div>
 
-                <ul>
-                    <li><a href="#home">Home</a></li>
+            <ul class="navbar-desktop">
+                <li><a href="#home">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
                     <li><a href="#contato">Contato</a></li>
-                </ul>
-
-            </nav>
-
+            </ul>
         </div><!-- /.menu-desktop -->
-        
-        <div id="menu-mobile">
 
-            <div class="menu-mobile">
+        <div class="menu-mobile">
 
-                <div class="menu-mobile-nav-toggle-bar"></div><!-- /.menu-mobile-nav-toggle-bar -->
+            <div class="menu-mobile-nav">
+                <div class="menu-mobile-nav-toggle-bar"></div>
+            </div> <!-- /.menu-mobile-nav -->
+            
 
-              </div><!-- /.menu-mobile -->
+            <ul class="navbar-mobile">
 
-              <nav class="menu-mobile-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                
+            </ul>
 
-                <ul>
+        </div><!-- /.menu-mobile -->
 
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#sobre">Sobre</a></li>
-                  <li><a href="#portfolio">Portfólio</a></li>
-                  <li><a href="#contato">Contato</a></li>
-                  
-                </ul>
+    </nav>
 
-              </nav>
-
-        </div><!-- /#menu-mobile -->
-
-    </header>
-
-    <section class="profile">
+    <!-- HEADER PROFILE -->
+    <header class="profile">
 
         <div class="profile-wrapper">
 
@@ -83,7 +73,7 @@
     
             <div class="profile-title" data-aos="zoom-out" data-aos-duration="2000">
 
-                <h3>Desenvolvedor Front-end (em desenvolvimento)</h3>
+                <h3>Desenvolvedor Front-end (em constante aprendizado)</h3>
 
             </div><!-- /.profile-title -->
 
@@ -99,8 +89,9 @@
 
         </div><!-- /.profile-wrapper -->
 
-    </section>
- 
+    </header>
+
+    <!-- SECTION SOBRE -->
     <section class="sobre">
 
         <div class="container">
@@ -152,6 +143,7 @@
 
     </section>
 
+    <!-- SECTION PORTFOLIO -->
     <section id="portfolio">
 
         <div class="bg2">
@@ -237,6 +229,7 @@
 
     </section><!-- /.skills -->
 
+    <!-- SECTION CONTATO -->
     <section id="contato" class="contato">
 
         <div class="container">
@@ -280,6 +273,7 @@
 
     </section><!-- /.contato -->
 
+    <!-- FOOTER -->
     <footer>
 
         <div class="container">
@@ -295,5 +289,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
     <script src="js/functions.js"></script>
+
 </body>
 </html>

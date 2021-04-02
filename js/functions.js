@@ -4,9 +4,9 @@ window.onscroll = function(){
             
     var currentScrollPos = window.pageYOffset;
         if(prevScrollpos > currentScrollPos){
-            document.getElementById('menu-desktop').style.top = "0";
+            document.querySelector('.menu-desktop').style.top = "0";
         } else {
-            document.getElementById('menu-desktop').style.top = "-98.39px";
+            document.querySelector('.menu-desktop').style.top = "-98.39px";
         }
             prevScrollpos = currentScrollPos;
 }
@@ -18,8 +18,8 @@ function refresh(){
 (function() {
 
     var hamburger = {
-      navToggle: document.querySelector('.menu-mobile'),
-      nav: document.querySelector('.menu-mobile-nav'),
+      navToggle: document.querySelector('.menu-mobile .menu-mobile-nav'),
+      nav: document.querySelector('.menu-mobile .navbar-mobile'),
   
       doToggle: function(e) {
         e.preventDefault();
