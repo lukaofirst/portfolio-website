@@ -178,7 +178,7 @@ nav #home{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    height: 18vh;
 } 
 
 .navbar-mobile li a {
