@@ -142,9 +142,11 @@ nav #home{
     transform: rotate(-45deg);
 }
 
+.menu-mobile {
+    display: none;
+}
 
 .navbar-mobile {
-    display: none;
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
     -ms-transition: left 0.5s ease;
