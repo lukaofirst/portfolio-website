@@ -8,6 +8,6 @@ To see more, click on the link: https://lukaofirst.github.io/portfolio-website/
 
 ## [PT-BR]
 
-### Este é o meu projeto de um site portfolio
+### Este é um projeto pessoal de um site portfolio
 
 Para ver mais, clique no link: https://lukaofirst.github.io/portfolio-website/
