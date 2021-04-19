@@ -1,54 +1,78 @@
-var prevScrollpos = window.pageYOffset;
+class onScroll {
+    constructor() {
+        this.menuDesktop = document.querySelector('.menu-desktop');
+    }
 
-window.onscroll = function(){
+    scrollSpy() {
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = () => {
             
-    var currentScrollPos = window.pageYOffset;
-        if(prevScrollpos > currentScrollPos){
-            document.querySelector('.menu-desktop').style.top = "0";
-        } else {
-            document.querySelector('.menu-desktop').style.top = "-99.39px";
+        var currentScrollPos = window.pageYOffset;
+            if(prevScrollpos > currentScrollPos){
+                this.menuDesktop.style.top = "0";
+            } else {
+                this.menuDesktop.style.top = "-99.39px";
+            }
+                prevScrollpos = currentScrollPos;
         }
-            prevScrollpos = currentScrollPos;
+    }
 }
 
-function refresh(){
-    location.reload();
+class windowReload {
+    constructor() {
+        this.logoDesktop = document.querySelector('.logo-desktop');
+    }
+
+    reloadPage() {
+        this.logoDesktop.addEventListener('click', () => {
+            window.location.reload();
+        });
+    }
 }
 
-(function() {
+class hamburgerMenu {
+    constructor() {
+        this.navToggle = document.querySelector('.menu-mobile .menu-mobile-nav');
+        this.nav = document.querySelector('.menu-mobile .navbar-mobile');
+    }
 
-    var hamburger = {
-      navToggle: document.querySelector('.menu-mobile .menu-mobile-nav'),
-      nav: document.querySelector('.menu-mobile .navbar-mobile'),
-  
-      doToggle: function(e) {
-        e.preventDefault();
-        this.navToggle.classList.toggle('expanded');
-        this.nav.classList.toggle('expanded');
-      }
-    };
-  
-    hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-    
-  
-}());
+    doToggle() {
+        let menuToggle = (e) => {
+            e.preventDefault();
 
-var project1 = document.getElementById('project1');
-var project2 = document.getElementById('project2');
-var project3 = document.getElementById('project3');
+            this.navToggle.classList.toggle('expanded');
+            this.nav.classList.toggle('expanded');
+        }
+
+        this.navToggle.addEventListener('click', e => menuToggle(e));
+    }
+}
+
+class openProjects {
+    constructor() {
+        this.project1 = document.getElementById('project1');
+        this.project2 = document.getElementById('project2');
+        this.project3 = document.getElementById('project3');
+    }
+
+    openLinks(url1, url2, url3) {
+        this.project1.addEventListener('click', () => window.open(url1));
+        this.project2.addEventListener('click', () => window.open(url2));
+        this.project3.addEventListener('click', () => window.open(url3));
+    }
+}
+
+const initScroll = new onScroll;
+const initReload = new windowReload;
+const initHamburger = new hamburgerMenu;
+const initProjects = new openProjects;
 
 
-project1.addEventListener('click', function(){
-    window.open("https://lukaofirst.github.io/instagram-clone/");
-})
-
-project2.addEventListener('click', function(){
-    window.open("https://lukaofirst.github.io/spotify-clone/");
-})
-
-project3.addEventListener('click', function(){
-    window.open("https://lukaofirst.github.io/tinder-clone/");
-})
+initScroll.scrollSpy();
+initReload.reloadPage();
+initHamburger.doToggle();
+initProjects.openLinks("https://lukaofirst.github.io/instagram-clone/", "https://lukaofirst.github.io/spotify-clone/", "https://lukaofirst.github.io/tinder-clone/");
 
 
 AOS.init();
