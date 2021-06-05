@@ -1,3 +1,57 @@
 @import 'config';
 @import 'utilities';
 @import 'buttons';
+
+#home {
+    width: 100%;
+    @include setBackgroundColor($default-gray-light);
+
+    .menu-desktop {
+        width: 100%;
+        border-bottom: 4px solid $default-blue;
+
+        .container {
+            @include setDisplay(flex, wrap, space-between, center);
+
+            .logo-desktop {
+                width: 80px;
+                padding: 10px 0;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .navbar-desktop {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    padding: 10px 0;
+
+                    a {
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: $default-blue;
+                        padding: 30px 15px;
+                        transition: all 0.4s ease;
+                        border: 0;
+                    }
+
+                    a:hover {
+                        @include setBackgroundColor($default-blue);
+                        color: $default-white;
+                    }
+                }
+            }
+
+            .contact-desktop {
+                .contact-button {
+                    @extend %action-buttons;
+                }
+            }
+        }
+    }
+}

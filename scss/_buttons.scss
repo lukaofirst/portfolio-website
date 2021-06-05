@@ -1,6 +1,11 @@
 %action-buttons {
+    border: 0;
+    font-size: 1.4rem;
     text-align: center;
     color: $default-blue;
-    padding: 8px 10px;
+    border: 2px solid $default-blue;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
     @include setBackgroundColor(transparent);
 }

@@ -15,3 +15,72 @@ body {
 body {
   overflow-x: hidden;
 }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#home .menu-desktop .container .contact-desktop .contact-button {
+  border: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #1e90ff;
+  border: 2px solid #1e90ff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#home {
+  width: 100%;
+  background-color: #2a2a2a;
+}
+
+#home .menu-desktop {
+  width: 100%;
+  border-bottom: 4px solid #1e90ff;
+}
+
+#home .menu-desktop .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home .menu-desktop .container .logo-desktop {
+  width: 80px;
+  padding: 10px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#home .menu-desktop .container .navbar-desktop {
+  list-style: none;
+}
+
+#home .menu-desktop .container .navbar-desktop li {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+#home .menu-desktop .container .navbar-desktop li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1e90ff;
+  padding: 30px 15px;
+  transition: all 0.4s ease;
+  border: 0;
+}
+
+#home .menu-desktop .container .navbar-desktop li a:hover {
+  background-color: #1e90ff;
+  color: #fff;
+}
