@@ -1,0 +1,6 @@
+%action-buttons {
+    text-align: center;
+    color: $default-blue;
+    padding: 8px 10px;
+    @include setBackgroundColor(transparent);
+}

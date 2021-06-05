@@ -1,0 +1,15 @@
+$default-blue: #1e90ff;
+$default-gray-light: #2a2a2a;
+$default-gray-dark: #1a1a1a;
+$font-stack: 'Montserrat', sans-serif;
+
+@mixin setDisplay($flex, $wrap, $justifyContent, $alignItems) {
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin setBackgroundColor($color) {
+    background-color: $color;
+}
