@@ -27,8 +27,8 @@ body {
   border: 0;
   font-size: 1.4rem;
   text-align: center;
-  color: #1e90ff;
-  border: 2px solid #1e90ff;
+  color: #c76502;
+  border: 2px solid #c76502;
   padding: 10px 20px;
   border-radius: 15px;
   cursor: pointer;
@@ -39,7 +39,7 @@ body {
 #home .menu-desktop .container .contact-desktop .contact-button:hover {
   color: #fff;
   transform: scale(0.95);
-  background-color: #1e90ff;
+  background-color: #c76502;
 }
 
 .profile .container .profile-info .social-media .social {
@@ -47,7 +47,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #1e90ff;
+  background-color: #c76502;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@ body {
 
 #home .menu-desktop {
   width: 100%;
-  border-bottom: 4px solid #1e90ff;
+  border-bottom: 4px solid #c76502;
 }
 
 #home .menu-desktop .container {
@@ -99,14 +99,14 @@ body {
   font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: #1e90ff;
+  color: #c76502;
   padding: 30px 15px;
   transition: all 0.4s ease;
   border: 0;
 }
 
 #home .menu-desktop .container .navbar-desktop li a:hover {
-  background-color: #1e90ff;
+  background-color: #c76502;
   color: #fff;
 }
 
@@ -126,7 +126,7 @@ body {
 .profile .container .profile-image {
   margin: 0 20px;
   border-radius: 50%;
-  border: 4px solid #1e90ff;
+  border: 4px solid #c76502;
 }
 
 .profile .container .profile-image .image {
@@ -157,7 +157,7 @@ body {
 }
 
 .profile .container .profile-info h2 {
-  color: #1e90ff;
+  color: #c76502;
   font-weight: 700;
   font-size: 3.4rem;
 }
