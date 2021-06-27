@@ -3,7 +3,6 @@
     @include setBackgroundColor($default-gray-dark);
 
     .about-wrapper {
-        background-color: red;
         height: 340px;
         border: 2px solid $default-color;
         background-image: url('../../images/computer2.jpg');
