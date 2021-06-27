@@ -1,0 +1,54 @@
+.about {
+    padding: 50px 0;
+    @include setBackgroundColor($default-gray-dark);
+
+    .about-wrapper {
+        background-color: red;
+        height: 340px;
+        border: 2px solid $default-color;
+        background-image: url('../../images/computer2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 340px - 4px;
+            background-color: rgba(0, 0, 0, 0.5);
+            @include setDisplay(flex, nowrap, center, center);
+
+            .about-title {
+                font-weight: 200;
+                font-size: 3.5rem;
+                color: $default-white;
+                padding: 70px;
+                text-align: left;
+                border-right: 2px solid $default-color;
+
+                span {
+                    font-weight: 700;
+                    font-size: 4rem;
+                    color: $default-color;
+                }
+            }
+
+            .about-body {
+                padding: 50px;
+                font-weight: 400;
+                color: $default-white;
+                font-size: 1.3rem;
+                text-align: justify;
+                line-height: 2;
+
+                span {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    color: $default-color;
+                }
+            }
+        }
+    }
+}

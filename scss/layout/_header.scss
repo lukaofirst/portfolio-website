@@ -9,7 +9,7 @@
         .profile-image {
             margin: 0 20px;
             border-radius: 50%;
-            border: 4px solid $default-blue;
+            border: 4px solid $default-color;
 
             .image {
                 width: 350px;
@@ -36,7 +36,7 @@
             }
 
             h2 {
-                color: $default-blue;
+                color: $default-color;
                 font-weight: 700;
                 font-size: 3.4rem;
             }

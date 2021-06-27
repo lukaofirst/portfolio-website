@@ -4,7 +4,7 @@
 
     .menu-desktop {
         width: 100%;
-        border-bottom: 4px solid $default-blue;
+        border-bottom: 4px solid $default-color;
 
         .container {
             height: 10vh;
@@ -29,14 +29,14 @@
                         font-size: 1.2rem;
                         text-decoration: none;
                         text-transform: uppercase;
-                        color: $default-blue;
+                        color: $default-color;
                         padding: 30px 15px;
                         transition: all 0.4s ease;
                         border: 0;
                     }
 
                     a:hover {
-                        @include setBackgroundColor($default-blue);
+                        @include setBackgroundColor($default-color);
                         color: $default-white;
                     }
                 }

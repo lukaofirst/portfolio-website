@@ -2,8 +2,8 @@
     border: 0;
     font-size: 1.4rem;
     text-align: center;
-    color: $default-blue;
-    border: 2px solid $default-blue;
+    color: $default-color;
+    border: 2px solid $default-color;
     padding: 10px 20px;
     border-radius: 15px;
     cursor: pointer;
@@ -14,7 +14,7 @@
 %action-buttons:hover {
     color: $default-white;
     transform: scale(0.95);
-    @include setBackgroundColor($default-blue);
+    @include setBackgroundColor($default-color);
 }
 
 %social-buttons {
@@ -22,7 +22,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: $default-blue;
+    background-color: $default-color;
     display: flex;
     justify-content: center;
     align-items: center;
