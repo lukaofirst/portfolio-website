@@ -1,0 +1,145 @@
+.portfolio {
+    padding: 50px 0;
+    @include setBackgroundColor($default-gray-dark);
+
+    .container {
+        @include setDisplay(flex, wrap, center, center);
+
+        .portfolio-title {
+            width: calc(100% - 800px);
+            flex-direction: column;
+
+            @include setDisplay(flex, nowrap, center, left);
+
+            p {
+                width: 100%;
+                font-size: 2.6rem;
+                font-weight: 200;
+                color: $default-white;
+            }
+
+            span {
+                font-size: 4rem;
+                font-weight: 700;
+                color: $default-color;
+            }
+        }
+
+        .portfolio-body {
+            width: 100%;
+            max-width: 800px;
+            height: 730px;
+            border: 2px solid $default-color;
+            background-image: url('../../images/computer1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+            .overlay {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: calc(730px - 4px);
+                background-color: rgba(0, 0, 0, 0.7);
+                @include setDisplay(flex, nowrap, center, center);
+
+                .swiper-container {
+                    width: 100%;
+                    max-width: calc(800px - 4px);
+                    height: 730px;
+                }
+
+                .swiper-pagination-bullet {
+                    width: 25px;
+                    height: 25px;
+                    position: relative;
+                    top: -15px;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background-color: $default-color;
+                }
+            }
+
+            .portfolio-boxes-wrapper {
+                width: 100%;
+                padding-top: 50px;
+                @include setDisplay(flex, wrap, center, center);
+
+                .portfolio-box-single {
+                    width: 100%;
+                    max-width: 362.5px;
+                    height: 286px;
+                    margin: 10px;
+                    padding: 15px;
+                    border-radius: 20px;
+                    color: $default-white;
+                    background-color: rgba(0, 0, 0, 0.5);
+
+                    h3 {
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        padding-bottom: 15px;
+                    }
+
+                    p {
+                        text-align: justify;
+                        font-weight: 200;
+                        height: 125px;
+                    }
+
+                    .tech-info {
+                        padding: 8px 0 10px 0;
+                        @include setDisplay(flex, nowrap, center, center);
+
+                        .tech-info-single {
+                            padding: 5px 10px;
+                            border-radius: 15px;
+                            margin: 0 2px;
+                            background-color: $default-gray-dark;
+                            font-weight: 200;
+                        }
+                    }
+
+                    .cta-buttons {
+                        @include setDisplay(flex, nowrap, space-around, center);
+
+                        .cta-button-single {
+                            padding: 8px 12px;
+                            border-radius: 15px;
+                            border: 0;
+                            outline: 0;
+                            color: $default-white;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            text-decoration: none;
+                            border: 1px solid $default-color;
+                            @include setBackgroundColor($default-color);
+                            transition: 0.4s ease;
+                        }
+
+                        .cta-button-single:hover {
+                            transform: scale(1.1);
+                            @include setBackgroundColor($default-color-dark);
+                        }
+
+                        .cta-button-single:nth-of-type(2) {
+                            border: 1px solid $default-color;
+                            @include setBackgroundColor(transparent);
+                            color: $default-color;
+                        }
+
+                        .cta-button-single:nth-of-type(2):hover {
+                            border: 1px solid $default-color;
+                            @include setBackgroundColor($default-color);
+                            color: $default-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

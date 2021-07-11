@@ -234,3 +234,166 @@ body {
   font-size: 1.6rem;
   color: #c76502;
 }
+
+.portfolio {
+  padding: 50px 0;
+  background-color: #1a1a1a;
+}
+
+.portfolio .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .container .portfolio-title {
+  width: calc(100% - 800px);
+  flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: left;
+}
+
+.portfolio .container .portfolio-title p {
+  width: 100%;
+  font-size: 2.6rem;
+  font-weight: 200;
+  color: #fff;
+}
+
+.portfolio .container .portfolio-title span {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #c76502;
+}
+
+.portfolio .container .portfolio-body {
+  width: 100%;
+  max-width: 800px;
+  height: 730px;
+  border: 2px solid #c76502;
+  background-image: url("../../images/computer1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.portfolio .container .portfolio-body .overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(730px - 4px);
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .container .portfolio-body .overlay .swiper-container {
+  width: 100%;
+  max-width: calc(800px - 4px);
+  height: 730px;
+}
+
+.portfolio .container .portfolio-body .overlay .swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: -15px;
+}
+
+.portfolio .container .portfolio-body .overlay .swiper-pagination-bullet-active {
+  background-color: #c76502;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single {
+  width: 100%;
+  max-width: 362.5px;
+  height: 286px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding-bottom: 15px;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single p {
+  text-align: justify;
+  font-weight: 200;
+  height: 125px;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single .tech-info {
+  padding: 8px 0 10px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single .tech-info .tech-info-single {
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 0 2px;
+  background-color: #1a1a1a;
+  font-weight: 200;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single .cta-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single .cta-buttons .cta-button-single {
+  padding: 8px 12px;
+  border-radius: 15px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #c76502;
+  background-color: #c76502;
+  transition: 0.4s ease;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single .cta-buttons .cta-button-single:hover {
+  transform: scale(1.1);
+  background-color: #b35e0a;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single .cta-buttons .cta-button-single:nth-of-type(2) {
+  border: 1px solid #c76502;
+  background-color: transparent;
+  color: #c76502;
+}
+
+.portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single .cta-buttons .cta-button-single:nth-of-type(2):hover {
+  border: 1px solid #c76502;
+  background-color: #c76502;
+  color: #fff;
+}
