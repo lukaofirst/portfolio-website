@@ -6,8 +6,9 @@
         @include setDisplay(flex, wrap, center, center);
 
         .portfolio-title {
-            width: calc(100% - 800px);
+            width: 380px;
             flex-direction: column;
+            padding-bottom: 30px;
 
             @include setDisplay(flex, nowrap, center, left);
 
@@ -46,8 +47,7 @@
                 @include setDisplay(flex, nowrap, center, center);
 
                 .swiper-container {
-                    width: 100%;
-                    max-width: calc(800px - 4px);
+                    width: 876px;
                     height: 730px;
                 }
 
