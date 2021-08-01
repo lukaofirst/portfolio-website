@@ -516,6 +516,32 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 963px) {
+  .about .container .about-wrapper {
+    height: 370px;
+  }
+  .about .container .about-wrapper .overlay {
+    flex-direction: column;
+    height: 366px;
+  }
+  .about .container .about-wrapper .overlay .about-title {
+    font-size: 2.3rem;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid #c76502;
+  }
+  .about .container .about-wrapper .overlay .about-title span {
+    font-size: 2.8rem;
+  }
+  .about .container .about-wrapper .overlay .about-body {
+    padding: 10px 4%;
+    font-size: 1rem;
+  }
+  .about .container .about-wrapper .overlay .about-body span {
+    font-size: 1.3rem;
+  }
+}
+
 @media screen and (max-width: 876px) {
   #home .menu-desktop {
     display: none;
@@ -563,5 +589,25 @@ body {
   }
   .profile .container .profile-info .social-media {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    padding: 50px 0;
+  }
+  .about .container .about-wrapper .overlay .about-title {
+    text-align: center;
+    font-size: 2rem;
+    border: 0;
+  }
+  .about .container .about-wrapper .overlay .about-title span {
+    font-size: 2.5rem;
+  }
+  .about .container .about-wrapper .overlay .about-body {
+    font-size: 0.8rem;
+  }
+  .about .container .about-wrapper .overlay .about-body span {
+    font-size: 1rem;
   }
 }

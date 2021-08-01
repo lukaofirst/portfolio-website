@@ -1,3 +1,38 @@
+@media screen and (max-width: 963px) {
+    .about {
+        .container {
+            .about-wrapper {
+                height: 370px;
+
+                .overlay {
+                    flex-direction: column;
+                    height: 370px - 4px;
+
+                    .about-title {
+                        font-size: 2.3rem;
+                        padding: 10px;
+                        border: 0;
+                        border-bottom: 2px solid $default-color;
+
+                        span {
+                            font-size: 2.8rem;
+                        }
+                    }
+
+                    .about-body {
+                        padding: 10px 4%;
+                        font-size: 1rem;
+
+                        span {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 876px) {
     #home {
         .menu-desktop {
@@ -74,6 +109,36 @@
 
                 .social-media {
                     justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about {
+        padding: 50px 0;
+
+        .container {
+            .about-wrapper {
+                .overlay {
+                    .about-title {
+                        text-align: center;
+                        font-size: 2rem;
+                        border: 0;
+
+                        span {
+                            font-size: 2.5rem;
+                        }
+                    }
+
+                    .about-body {
+                        font-size: 0.8rem;
+
+                        span {
+                            font-size: 1rem;
+                        }
+                    }
                 }
             }
         }
