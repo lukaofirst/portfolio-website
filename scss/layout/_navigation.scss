@@ -3,12 +3,11 @@
     @include setBackgroundColor($default-gray-light);
 
     .menu-desktop {
-        width: 100%;
         border-bottom: 4px solid $default-color;
 
         .container {
-            height: 10vh;
-            @include setDisplay(flex, wrap, space-between, center);
+            height: 11vh;
+            @include setDisplay(flex, nowrap, space-between, center);
 
             .logo-desktop {
                 width: 80px;
@@ -20,13 +19,14 @@
 
             .navbar-desktop {
                 list-style: none;
+                padding: 0 10px;
 
                 li {
                     display: inline-block;
                     padding: 10px 0;
 
                     a {
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                         text-decoration: none;
                         text-transform: uppercase;
                         color: $default-color;
@@ -49,4 +49,130 @@
             }
         }
     }
+}
+
+.menu-mobile {
+    display: none;
+    height: 11vh;
+    border-bottom: 4px solid $default-color;
+
+    .logo-desktop {
+        width: 85px;
+        padding: 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+.menu-mobile-nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 2rem;
+    left: 2rem;
+    position: fixed;
+    top: 2rem;
+    width: 3rem;
+    z-index: 2;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar,
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::after,
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: $default-color;
+    content: '';
+    height: 0.4rem;
+    width: 100%;
+    border-radius: 1.5px;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar {
+    margin-top: 0;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::after {
+    margin-top: 0.8rem;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::before {
+    margin-top: -0.8rem;
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar {
+    background: transparent;
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after,
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::before {
+    background: $default-color;
+    margin-top: 0;
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.navbar-mobile {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    background: $default-gray-dark;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 300;
+    height: 100vh;
+    left: -20rem;
+    padding: 6rem 2rem 2rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 20rem;
+    z-index: 1;
+    box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
+    border-right: 3px solid $default-color;
+}
+
+.navbar-mobile.expanded {
+    left: 0;
+}
+
+.navbar-mobile li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18vh;
+}
+
+.navbar-mobile li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: $default-color;
 }

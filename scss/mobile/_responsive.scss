@@ -1,0 +1,38 @@
+@media screen and (max-width: 876px) {
+    #home {
+        .menu-desktop {
+            display: none;
+        }
+    }
+
+    .menu-mobile {
+        display: block;
+
+        .logo-desktop {
+            padding: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        .menu-desktop {
+            .container {
+                .logo-desktop {
+                    width: 70px;
+                }
+
+                .navbar-desktop {
+                    padding: 0;
+
+                    li {
+                        a {
+                            padding: 30px 10px;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -25,12 +25,12 @@ body {
 
 #home .menu-desktop .container .contact-desktop .contact-button {
   border: 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   color: #c76502;
   border: 2px solid #c76502;
-  padding: 10px 20px;
-  border-radius: 15px;
+  padding: 10px 16px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.4s ease;
   background-color: transparent;
@@ -66,14 +66,13 @@ body {
 }
 
 #home .menu-desktop {
-  width: 100%;
   border-bottom: 4px solid #c76502;
 }
 
 #home .menu-desktop .container {
-  height: 10vh;
+  height: 11vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -88,6 +87,7 @@ body {
 
 #home .menu-desktop .container .navbar-desktop {
   list-style: none;
+  padding: 0 10px;
 }
 
 #home .menu-desktop .container .navbar-desktop li {
@@ -96,7 +96,7 @@ body {
 }
 
 #home .menu-desktop .container .navbar-desktop li a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #c76502;
@@ -110,13 +110,123 @@ body {
   color: #fff;
 }
 
+.menu-mobile {
+  display: none;
+  height: 11vh;
+  border-bottom: 4px solid #c76502;
+}
+
+.menu-mobile .logo-desktop {
+  width: 85px;
+  padding: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.menu-mobile-nav {
+  user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  left: 2rem;
+  position: fixed;
+  top: 2rem;
+  width: 3rem;
+  z-index: 2;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar,
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::after,
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+  background: #c76502;
+  content: '';
+  height: 0.4rem;
+  width: 100%;
+  border-radius: 1.5px;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar {
+  margin-top: 0;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::after {
+  margin-top: 0.8rem;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::before {
+  margin-top: -0.8rem;
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar {
+  background: transparent;
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after,
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::before {
+  background: #c76502;
+  margin-top: 0;
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after {
+  transform: rotate(45deg);
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::before {
+  transform: rotate(-45deg);
+}
+
+.navbar-mobile {
+  transition: left 0.5s ease;
+  background: #1a1a1a;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 300;
+  height: 100vh;
+  left: -20rem;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 20rem;
+  z-index: 1;
+  box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
+  border-right: 3px solid #c76502;
+}
+
+.navbar-mobile.expanded {
+  left: 0;
+}
+
+.navbar-mobile li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
+}
+
+.navbar-mobile li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #c76502;
+}
+
 .profile {
   width: 100%;
   background-color: #1a1a1a;
 }
 
 .profile .container {
-  height: 90vh;
+  height: 89vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -396,4 +506,29 @@ body {
   border: 1px solid #c76502;
   background-color: #c76502;
   color: #fff;
+}
+
+@media screen and (max-width: 876px) {
+  #home .menu-desktop {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-mobile .logo-desktop {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #home .menu-desktop .container .logo-desktop {
+    width: 70px;
+  }
+  #home .menu-desktop .container .navbar-desktop {
+    padding: 0;
+  }
+  #home .menu-desktop .container .navbar-desktop li a {
+    padding: 30px 10px;
+    font-size: 0.9rem;
+  }
 }

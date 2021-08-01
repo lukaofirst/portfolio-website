@@ -3,7 +3,7 @@
     @include setBackgroundColor($default-gray-dark);
 
     .container {
-        height: 90vh;
+        height: 89vh;
         @include setDisplay(flex, wrap, space-evenly, center);
 
         .profile-image {
