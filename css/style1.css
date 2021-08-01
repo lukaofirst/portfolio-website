@@ -5,7 +5,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html,body {
+html,
+body {
     height: 100%;
     scroll-behavior: smooth;
 }
@@ -17,7 +18,7 @@ body {
 /*** General Div's ***/
 
 .clear {
-    clear:both;
+    clear: both;
 }
 
 .container {
@@ -28,10 +29,14 @@ body {
 
 /*** Navbar Desktop & Mobile ***/
 
-nav #home{
+nav #home {
     width: 100%;
-    background: rgb(35,7,77);
-    background: linear-gradient(90deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%); 
+    background: rgb(35, 7, 77);
+    background: linear-gradient(
+        90deg,
+        rgba(35, 7, 77, 1) 0%,
+        rgba(66, 134, 244, 1) 100%
+    );
 }
 
 .menu-desktop img {
@@ -49,12 +54,16 @@ nav #home{
     padding: 5px 80px;
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    background: rgb(35,7,77);
-    background: linear-gradient(90deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%); 
+    align-items: center;
+    background: rgb(35, 7, 77);
+    background: linear-gradient(
+        90deg,
+        rgba(35, 7, 77, 1) 0%,
+        rgba(66, 134, 244, 1) 100%
+    );
     background-size: 100%;
     transition: top 0.3s;
     z-index: 999;
@@ -81,7 +90,7 @@ nav #home{
 }
 
 .menu-desktop ul.navbar-desktop li a:hover {
-    background-color: rgba(35,7,77,1);
+    background-color: rgba(35, 7, 77, 1);
 }
 
 .menu-mobile-nav {
@@ -96,9 +105,9 @@ nav #home{
     width: 3rem;
     z-index: 2;
 }
-  
-.menu-mobile-nav .menu-mobile-nav-toggle-bar,  
-.menu-mobile-nav .menu-mobile-nav-toggle-bar::after,  
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar,
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::after,
 .menu-mobile-nav .menu-mobile-nav-toggle-bar::before {
     position: absolute;
     top: 50%;
@@ -116,27 +125,35 @@ nav #home{
     width: 100%;
     border-radius: 1.5px;
 }
-  
-.menu-mobile-nav .menu-mobile-nav-toggle-bar { margin-top: 0; }
-  
-.menu-mobile-nav .menu-mobile-nav-toggle-bar::after { margin-top: 0.8rem; }
-  
-.menu-mobile-nav .menu-mobile-nav-toggle-bar::before { margin-top: -0.8rem; }
-  
-.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar { background: transparent; }
-  
-.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after, 
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar {
+    margin-top: 0;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::after {
+    margin-top: 0.8rem;
+}
+
+.menu-mobile-nav .menu-mobile-nav-toggle-bar::before {
+    margin-top: -0.8rem;
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar {
+    background: transparent;
+}
+
+.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after,
 .menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::before {
     background: white;
     margin-top: 0;
 }
-  
+
 .menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-  
+
 .menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::before {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -153,8 +170,12 @@ nav #home{
     -ms-transition: left 0.5s ease;
     -o-transition: left 0.5s ease;
     transition: left 0.5s ease;
-    background: rgb(35,7,77);
-    background: linear-gradient(180deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
+    background: rgb(35, 7, 77);
+    background: linear-gradient(
+        180deg,
+        rgba(35, 7, 77, 1) 0%,
+        rgba(66, 134, 244, 1) 100%
+    );
     cursor: pointer;
     font-size: 2rem;
     font-weight: 300;
@@ -165,13 +186,15 @@ nav #home{
     top: 0;
     width: 20rem;
     z-index: 1;
-    box-shadow: 3px -1px 11px 2px rgba(0,0,0,0.16);
-    -webkit-box-shadow: 3px -1px 11px 2px rgba(0,0,0,0.16);
-    -moz-box-shadow: 3px -1px 11px 2px rgba(0,0,0,0.16);
+    box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
     border-right: 3px solid white;
 }
-  
-.navbar-mobile.expanded { left: 0; }
+
+.navbar-mobile.expanded {
+    left: 0;
+}
 
 .navbar-mobile li {
     list-style: none;
@@ -179,7 +202,7 @@ nav #home{
     align-items: center;
     justify-content: center;
     height: 18vh;
-} 
+}
 
 .navbar-mobile li a {
     text-decoration: none;
@@ -193,8 +216,12 @@ nav #home{
     width: 100%;
     margin: 0 auto;
     padding: 200px 0 150px 0;
-    background: rgb(35,7,77);
-    background: linear-gradient(180deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
+    background: rgb(35, 7, 77);
+    background: linear-gradient(
+        180deg,
+        rgba(35, 7, 77, 1) 0%,
+        rgba(66, 134, 244, 1) 100%
+    );
     position: relative;
 }
 
@@ -202,12 +229,12 @@ nav #home{
     width: 100%;
     max-width: 300px;
     height: 300px;
-    margin:0 auto;
+    margin: 0 auto;
     border-radius: 50%;
-    border: 8px solid rgba(255,255,255,1); 
+    border: 8px solid rgba(255, 255, 255, 1);
     background-image: url('../images/profile.jpg');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -232,14 +259,15 @@ nav #home{
     height: 60px;
     border-radius: 50%;
     border: 2px solid white;
-    background-color: rgba(0,0,0,0.6);
-    display:flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 800ms ease;
 }
 
-.b1:hover, .b3:hover {
+.b1:hover,
+.b3:hover {
     background-color: #23074d;
     transform: scale(1.2);
 }
@@ -251,7 +279,6 @@ nav #home{
 
 .social-media a i {
     font-size: 30px;
-    
 }
 
 .profile-wrapper h1 {
@@ -261,7 +288,7 @@ nav #home{
     letter-spacing: 5px;
     color: #4286f4;
     text-align: center;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.23);
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.23);
     padding: 0 2%;
 }
 
@@ -270,7 +297,6 @@ nav #home{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .profile-title h3 {
@@ -307,21 +333,29 @@ section.sobre {
 }
 
 .line:nth-of-type(1) {
-    background: rgb(35,7,77);
-    background: linear-gradient(90deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
+    background: rgb(35, 7, 77);
+    background: linear-gradient(
+        90deg,
+        rgba(35, 7, 77, 1) 0%,
+        rgba(66, 134, 244, 1) 100%
+    );
     padding: 0 2%;
 }
 
 .line:nth-of-type(2) {
-    background: rgb(35,7,77);
-    background: linear-gradient(270deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
+    background: rgb(35, 7, 77);
+    background: linear-gradient(
+        270deg,
+        rgba(35, 7, 77, 1) 0%,
+        rgba(66, 134, 244, 1) 100%
+    );
     padding: 0 2%;
 }
 
 .sobre-title h4 {
     padding: 0 15px;
     font-size: 25px;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .sobre-texto {
@@ -337,7 +371,7 @@ section.sobre {
     margin: 20px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 19px;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
     line-height: 35px;
 }
 
@@ -359,8 +393,12 @@ section.sobre {
 .bg2 {
     width: 100%;
     padding: 0 2%;
-    background: rgb(35,7,77);
-    background: linear-gradient(0deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
+    background: rgb(35, 7, 77);
+    background: linear-gradient(
+        0deg,
+        rgba(35, 7, 77, 1) 0%,
+        rgba(66, 134, 244, 1) 100%
+    );
     position: relative;
 }
 
@@ -390,13 +428,11 @@ section.sobre {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
 
 .portfolio-single:nth-of-type(2n) {
     flex-direction: row-reverse;
 }
-
 
 .portfolio-image {
     width: 350px;
@@ -404,7 +440,7 @@ section.sobre {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 38% 62% 41% 59% / 55% 38% 62% 45% ;
+    border-radius: 38% 62% 41% 59% / 55% 38% 62% 45%;
     border: 8px solid white;
     cursor: pointer;
     transition: transform 800ms ease;
@@ -465,7 +501,7 @@ section.contato .container {
     padding: 0 15px;
     font-size: 25px;
     text-align: center;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .contato-wrapper {
@@ -475,18 +511,18 @@ section.contato .container {
 }
 
 .contato-wrapper-trad {
-    float:left;
+    float: left;
 }
 
 .contato-wrapper-trad h5 {
     font-size: 18px;
     padding: 10px;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .contato-wrapper-trad h5 a {
     text-decoration: none;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .contato-social-media {
@@ -500,9 +536,13 @@ section.contato .container {
 /*** Footer ***/
 
 footer {
-    color:white;
-    background: rgb(35,7,77);
-    background: linear-gradient(90deg, rgba(35,7,77,1) 0%, rgba(66,134,244,1) 100%);
+    color: white;
+    background: rgb(35, 7, 77);
+    background: linear-gradient(
+        90deg,
+        rgba(35, 7, 77, 1) 0%,
+        rgba(66, 134, 244, 1) 100%
+    );
 }
 
 footer p {
@@ -510,11 +550,11 @@ footer p {
 }
 
 footer p:nth-of-type(1) {
-    float:left;
+    float: left;
 }
 
 footer p:nth-of-type(2) {
-    float:right;
+    float: right;
 }
 
 footer p i {
@@ -572,21 +612,21 @@ footer p i {
     }
 }
 
-@media screen and (min-width:1441px) and (max-width: 1919px) {
+@media screen and (min-width: 1441px) and (max-width: 1919px) {
     .menu-desktop {
         padding: 5px 15%;
     }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
     .menu-desktop {
         padding: 5px 80px;
     }
 }
 
-@media screen and (max-width:934px) {
+@media screen and (max-width: 934px) {
     body {
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
     .menu-desktop {
@@ -614,7 +654,7 @@ footer p i {
     .portfolio-box {
         flex-wrap: wrap;
     }
-    
+
     .portfolio {
         width: 100%;
     }
@@ -626,14 +666,13 @@ footer p i {
 
 @media screen and (max-width: 740px) {
     .contato-wrapper-trad {
-        float:none;
+        float: none;
     }
 
     .contato-wrapper-trad h5 {
         text-align: center;
     }
-    
-    
+
     .contato-social-media {
         float: none;
     }
@@ -643,13 +682,13 @@ footer p i {
     footer p {
         text-align: center;
     }
-    
+
     footer p:nth-of-type(1) {
-        float:none;
+        float: none;
     }
-    
+
     footer p:nth-of-type(2) {
-        float:none;
+        float: none;
     }
 }
 

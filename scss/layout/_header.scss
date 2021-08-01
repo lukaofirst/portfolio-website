@@ -4,6 +4,7 @@
 
     .container {
         height: 89vh;
+        padding: 50px 0;
         @include setDisplay(flex, wrap, space-evenly, center);
 
         .profile-image {
