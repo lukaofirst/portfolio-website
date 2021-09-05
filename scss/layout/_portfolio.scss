@@ -47,8 +47,8 @@
                 @include setDisplay(flex, nowrap, center, center);
 
                 .swiper-container {
-                    width: 876px;
-                    height: 730px;
+                    width: 100%;
+                    height: 100%;
                 }
 
                 .swiper-pagination-bullet {

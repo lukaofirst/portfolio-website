@@ -94,24 +94,6 @@
     }
 }
 
-@media screen and (max-width: 869px) {
-    .portfolio {
-        .container {
-            .portfolio-body {
-                height: 1350px;
-
-                .overlay {
-                    height: calc(1350px - 4px);
-
-                    .swiper-container {
-                        height: 1350px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 768px) {
     #home {
         .menu-desktop {
@@ -129,6 +111,18 @@
                             font-size: 0.9rem;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        .container {
+            .portfolio-body {
+                height: 1350px;
+
+                .overlay {
+                    height: calc(1350px - 4px);
                 }
             }
         }
@@ -179,45 +173,6 @@
 
                         span {
                             font-size: 1rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .portfolio {
-        .container {
-            .portfolio-title {
-                p {
-                    font-size: 2rem;
-                }
-
-                span {
-                    font-size: 2.7rem;
-                }
-            }
-
-            .portfolio-body {
-                height: 1500px;
-
-                .overlay {
-                    height: calc(1500px - 4px);
-
-                    .swiper-container {
-                        height: 1500px;
-                    }
-                }
-
-                .portfolio-boxes-wrapper {
-                    padding: 15px 4%;
-                    height: 1350px;
-
-                    .portfolio-box-single {
-                        height: 300px;
-
-                        .tech-info {
-                            margin: 10px 0;
                         }
                     }
                 }

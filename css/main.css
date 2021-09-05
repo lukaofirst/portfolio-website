@@ -414,8 +414,8 @@ body {
 }
 
 .portfolio .container .portfolio-body .overlay .swiper-container {
-  width: 876px;
-  height: 730px;
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio .container .portfolio-body .overlay .swiper-pagination-bullet {
@@ -576,18 +576,6 @@ body {
   }
 }
 
-@media screen and (max-width: 869px) {
-  .portfolio .container .portfolio-body {
-    height: 1350px;
-  }
-  .portfolio .container .portfolio-body .overlay {
-    height: calc(1350px - 4px);
-  }
-  .portfolio .container .portfolio-body .overlay .swiper-container {
-    height: 1350px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   #home .menu-desktop .container .logo-desktop {
     width: 70px;
@@ -598,6 +586,12 @@ body {
   #home .menu-desktop .container .navbar-desktop li a {
     padding: 30px 10px;
     font-size: 0.9rem;
+  }
+  .portfolio .container .portfolio-body {
+    height: 1350px;
+  }
+  .portfolio .container .portfolio-body .overlay {
+    height: calc(1350px - 4px);
   }
 }
 
@@ -633,30 +627,5 @@ body {
   }
   .about .container .about-wrapper .overlay .about-body span {
     font-size: 1rem;
-  }
-  .portfolio .container .portfolio-title p {
-    font-size: 2rem;
-  }
-  .portfolio .container .portfolio-title span {
-    font-size: 2.7rem;
-  }
-  .portfolio .container .portfolio-body {
-    height: 1500px;
-  }
-  .portfolio .container .portfolio-body .overlay {
-    height: calc(1500px - 4px);
-  }
-  .portfolio .container .portfolio-body .overlay .swiper-container {
-    height: 1500px;
-  }
-  .portfolio .container .portfolio-body .portfolio-boxes-wrapper {
-    padding: 15px 4%;
-    height: 1350px;
-  }
-  .portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single {
-    height: 300px;
-  }
-  .portfolio .container .portfolio-body .portfolio-boxes-wrapper .portfolio-box-single .tech-info {
-    margin: 10px 0;
   }
 }
