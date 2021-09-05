@@ -49,7 +49,7 @@ body {
   background-color: #c76502;
 }
 
-.profile .container .profile-info .social-media .social {
+.profile .container .profile-info .social-media .social, .contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social {
   margin: 35px 0;
   width: 55px;
   height: 55px;
@@ -63,7 +63,7 @@ body {
   transition: transform 800ms ease;
 }
 
-.profile .container .profile-info .social-media .social:hover {
+.profile .container .profile-info .social-media .social:hover, .contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social:hover {
   transform: scale(1.2);
 }
 
@@ -607,6 +607,115 @@ body {
 .skills .container .skills-body .skills-boxes-wrapper .skills-box-single h3 {
   font-size: 1.4rem;
   font-weight: 200;
+}
+
+.contact {
+  padding: 50px 0;
+  background-color: #1a1a1a;
+}
+
+.contact .contact-wrapper {
+  height: 250px;
+  border: 2px solid #c76502;
+  background-image: url("../../images/computer2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact .contact-wrapper .overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 246px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .contact-wrapper .overlay .contact-title {
+  width: 300px;
+  font-weight: 200;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 50px;
+  text-align: left;
+  border-right: 2px solid #c76502;
+}
+
+.contact .contact-wrapper .overlay .contact-title span {
+  display: block;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #c76502;
+}
+
+.contact .contact-wrapper .overlay .contact-body {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .contact-wrapper .overlay .contact-body .email {
+  width: 600px;
+  padding: 50px;
+}
+
+.contact .contact-wrapper .overlay .contact-body .email h3 {
+  font-weight: 200;
+  color: #fff;
+  padding-bottom: 25px;
+}
+
+.contact .contact-wrapper .overlay .contact-body .email i {
+  font-size: 1.2rem;
+  color: #c76502;
+}
+
+.contact .contact-wrapper .overlay .contact-body .email a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #c76502;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.contact .contact-wrapper .overlay .contact-body .social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.contact .contact-wrapper .overlay .contact-body .social-media h3 {
+  font-weight: 200;
+  color: #fff;
+}
+
+.contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social:nth-of-type(2) {
+  margin: 0 30px;
 }
 
 @media screen and (max-width: 1280px) {
