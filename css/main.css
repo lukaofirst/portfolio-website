@@ -563,6 +563,7 @@ body {
 .skills .container .skills-body .swiper-container2 {
   width: 100%;
   height: 100%;
+  display: none;
 }
 
 .skills .container .skills-body .swiper-pagination-bullet {
