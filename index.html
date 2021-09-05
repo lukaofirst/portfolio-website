@@ -50,14 +50,14 @@
                 <div class="container">
                     <div class="logo-desktop">
                         <a href="#">
-                            <img src="images/lm_logo.svg" alt="Logo" />
+                            <img src="images/iconsSVG/lm_logo.svg" alt="Logo" />
                         </a>
                     </div>
 
                     <ul class="navbar-desktop">
                         <li><a href="#about">Sobre Mim</a></li>
                         <li><a href="#portfolio">Portfólio</a></li>
-                        <li><a href="blog">Blog</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#skills">Habilidades</a></li>
                     </ul>
 
@@ -75,7 +75,7 @@
                     </div>
                     <div class="logo-desktop">
                         <a href="#">
-                            <img src="images/lm_logo.svg" alt="Logo" />
+                            <img src="images/iconsSVG/lm_logo.svg" alt="Logo" />
                         </a>
                     </div>
 
@@ -728,6 +728,87 @@
 
         <!-- TODO: blog section -->
 
+        <!-- SECTION SKILLS -->
+        <section class="skills">
+            <div class="container">
+                <div class="skills-title">
+                    <p>Minhas</p>
+                    <span>Habilidades</span>
+                </div>
+                <div class="skills-body">
+                    <div class="swiper-container2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="skills-boxes-wrapper">
+                                    <div class="skills-box-single">
+                                        <img
+                                            src="images/iconsSVG/html5.svg"
+                                            alt="HTML5 icon"
+                                        />
+                                        <h3>HTML5</h3>
+                                    </div>
+                                    <div class="skills-box-single">
+                                        <img
+                                            src="images/iconsSVG/css3.svg"
+                                            alt="CSS3 icon"
+                                        />
+                                        <h3>CSS3</h3>
+                                    </div>
+                                    <div class="skills-box-single">
+                                        <img
+                                            src="images/iconsSVG/js.svg"
+                                            alt="JavaScript icon"
+                                        />
+                                        <h3>JavaScript</h3>
+                                    </div>
+                                    <div class="skills-box-single">
+                                        <img
+                                            src="images/iconsSVG/bootstrap.svg"
+                                            alt="Bootstrap icon"
+                                        />
+                                        <h3>Bootstrap</h3>
+                                    </div>
+                                    <div class="skills-box-single">
+                                        <img
+                                            src="images/iconsSVG/tailwindcss.svg"
+                                            alt="TailwindCSS icon"
+                                        />
+                                        <h3>TailwindCSS</h3>
+                                    </div>
+                                    <div class="skills-box-single">
+                                        <img
+                                            src="images/iconsSVG/sass.svg"
+                                            alt=""
+                                        />
+                                        <h3>Sass</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="skills-boxes-wrapper">
+                                    <div class="skills-box-single">
+                                        <img
+                                            src="images/iconsSVG/react.svg"
+                                            alt="React icon"
+                                        />
+                                        <h3>React</h3>
+                                    </div>
+                                    <div class="skills-box-single">
+                                        <img
+                                            src="images/iconsSVG/c-sharp.svg"
+                                            alt="c-sharp icon"
+                                        />
+                                        <h3>C#</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION CONTATO -->
         <section id="contato" class="contato">
             <div class="container">
@@ -842,7 +923,27 @@
                 speed: 800,
             });
 
+            var swiper2 = new Swiper('.swiper-container2', {
+                direction: 'horizontal',
+                loop: true,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: 'true',
+                },
+                autoplay: {
+                    delay: 10000,
+                    disableOnInteraction: false,
+                },
+
+                speed: 800,
+            });
+
             swiper.init();
+            swiper2.init();
         </script>
     </body>
 </html>

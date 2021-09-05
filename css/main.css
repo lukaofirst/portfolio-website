@@ -516,8 +516,104 @@ body {
   color: #fff;
 }
 
+.skills {
+  padding: 50px 0;
+  background-color: #1a1a1a;
+}
+
+.skills .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .container .skills-title {
+  width: 380px;
+  flex-direction: column;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: left;
+}
+
+.skills .container .skills-title p {
+  width: 100%;
+  font-size: 2.6rem;
+  font-weight: 200;
+  color: #fff;
+}
+
+.skills .container .skills-title span {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #c76502;
+}
+
+.skills .container .skills-body {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #c76502;
+  background-color: #2a2a2a;
+  position: relative;
+}
+
+.skills .container .skills-body .swiper-container2 {
+  width: 100%;
+  height: 100%;
+}
+
+.skills .container .skills-body .swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.skills .container .skills-body .swiper-pagination-bullet-active {
+  background-color: #c76502;
+}
+
+.skills .container .skills-body .skills-boxes-wrapper {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .container .skills-body .skills-boxes-wrapper .skills-box-single {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  color: #fff;
+  margin: 20px;
+  padding: 15px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills .container .skills-body .skills-boxes-wrapper .skills-box-single img {
+  width: 100%;
+  max-width: 90px;
+  padding-bottom: 20px;
+}
+
+.skills .container .skills-body .skills-boxes-wrapper .skills-box-single h3 {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
 @media screen and (max-width: 1280px) {
   .portfolio .container .portfolio-title {
+    text-align: center;
+  }
+  .skills .container .skills-title {
     text-align: center;
   }
 }
