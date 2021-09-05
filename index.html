@@ -854,89 +854,11 @@
             </div>
         </section>
 
-        <!-- SECTION CONTATO -->
-        <section id="contato" class="contato">
-            <div class="container">
-                <div class="contato-header">
-                    <div
-                        class="line"
-                        data-aos="fade-right"
-                        data-aos-duration="800"
-                    ></div>
-                    <!-- /.line -->
-
-                    <h4 data-aos="zoom-in-down" data-aos-duration="1100">
-                        Contato
-                    </h4>
-
-                    <div
-                        class="line"
-                        data-aos="fade-left"
-                        data-aos-duration="800"
-                    ></div>
-                    <!-- /.line -->
-                </div>
-                <!-- /.contato-header -->
-
-                <div class="contato-wrapper">
-                    <div
-                        class="contato-wrapper-trad"
-                        data-aos="fade-down"
-                        data-aos-duration="1500"
-                    >
-                        <h5>
-                            <a href="mailto:lucasmacedo123@gmail.com"
-                                >E-mail: lucasmacedo123@gmail.com</a
-                            >
-                        </h5>
-                        <h5>Telefone: (99) 99999-9999</h5>
-                    </div>
-                    <!-- /.contato-wrapper-trad -->
-
-                    <div
-                        class="contato-social-media"
-                        data-aos="fade-down"
-                        data-aos-duration="1500"
-                    >
-                        <div class="social-media">
-                            <a
-                                class="social b1"
-                                href="https://www.linkedin.com/in/lucas-macedo-lmo/"
-                                target="_blank"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
-                            <a
-                                class="social b2"
-                                href="https://github.com/lukaofirst"
-                                target="_blank"
-                                ><i class="fab fa-github"></i
-                            ></a>
-                            <a
-                                class="social b3"
-                                href="https://www.instagram.com/lmacedov/"
-                                target="_blank"
-                                ><i class="fab fa-instagram"></i
-                            ></a>
-                        </div>
-                        <!-- /.social-media -->
-                    </div>
-                    <!-- /.contato-social-media -->
-
-                    <div class="clear"></div>
-                </div>
-                <!-- /.contato-wrapper -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.contato -->
-
         <!-- FOOTER -->
         <footer>
             <div class="container">
                 <p>Desenvolvido por Lucas Macedo &copy;</p>
                 <p>Todos os direitos reservados</p>
-
-                <div class="clear"></div>
             </div>
             <!-- /.container -->
         </footer>
@@ -987,8 +909,20 @@
                 speed: 800,
             });
 
-            swiper.init();
-            swiper2.init();
+            document.addEventListener('DOMContentLoaded', () => {
+                var swiperContainer =
+                    document.querySelector('.swiper-container');
+                var swiperContainer2 =
+                    document.querySelector('.swiper-container2');
+
+                setTimeout(() => {
+                    swiperContainer.style.display = 'block';
+                    swiperContainer2.style.display = 'block';
+                }, 100);
+
+                swiper.init();
+                swiper2.init();
+            });
         </script>
     </body>
 </html>

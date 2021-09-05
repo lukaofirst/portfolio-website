@@ -1,0 +1,11 @@
+footer {
+    background-color: $default-gray-light;
+    padding: 30px 0;
+    color: $default-color;
+    border-top: 2px solid $default-color;
+    font-size: 1.2rem;
+
+    .container {
+        @include setDisplay(flex, wrap, space-between, center);
+    }
+}

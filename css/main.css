@@ -416,6 +416,7 @@ body {
 .portfolio .container .portfolio-body .overlay .swiper-container {
   width: 100%;
   height: 100%;
+  display: none;
 }
 
 .portfolio .container .portfolio-body .overlay .swiper-pagination-bullet {
@@ -610,7 +611,7 @@ body {
 }
 
 .contact {
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
   background-color: #1a1a1a;
 }
 
@@ -716,6 +717,21 @@ body {
 
 .contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social:nth-of-type(2) {
   margin: 0 30px;
+}
+
+footer {
+  background-color: #2a2a2a;
+  padding: 30px 0;
+  color: #c76502;
+  border-top: 2px solid #c76502;
+  font-size: 1.2rem;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 1280px) {
