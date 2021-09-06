@@ -7,5 +7,9 @@ footer {
 
     .container {
         @include setDisplay(flex, wrap, space-between, center);
+
+        p {
+            padding: 0 20px;
+        }
     }
 }

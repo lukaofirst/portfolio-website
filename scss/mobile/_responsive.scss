@@ -14,6 +14,48 @@
             }
         }
     }
+
+    .contact {
+        .container {
+            .contact-wrapper {
+                height: 305px;
+
+                .overlay {
+                    height: 305px - 4px;
+                    flex-wrap: wrap;
+
+                    .contact-title {
+                        width: 100%;
+                        padding: 20px 0 0 0;
+                        text-align: center;
+                        border: 0;
+                    }
+
+                    .contact-body {
+                        padding: 20px;
+                        height: auto;
+
+                        .email,
+                        .social-media {
+                            width: 50%;
+                            padding: 0;
+                        }
+
+                        .email {
+                            text-align: center;
+                        }
+
+                        .social-media {
+                            h3 {
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 963px) {
@@ -100,6 +142,54 @@
             }
         }
     }
+
+    .contact {
+        .container {
+            .contact-wrapper {
+                height: 400px;
+
+                .overlay {
+                    height: 400px - 4px;
+
+                    .contact-body {
+                        flex-direction: column;
+
+                        .email {
+                            width: 100%;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            padding: 10px;
+
+                            i {
+                                display: none;
+                            }
+
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 869px) {
+    .portfolio {
+        .container {
+            .portfolio-body {
+                height: 1350px;
+
+                .overlay {
+                    height: calc(1350px - 4px);
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            justify-content: center;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -119,18 +209,6 @@
                             font-size: 0.9rem;
                         }
                     }
-                }
-            }
-        }
-    }
-
-    .portfolio {
-        .container {
-            .portfolio-body {
-                height: 1350px;
-
-                .overlay {
-                    height: calc(1350px - 4px);
                 }
             }
         }

@@ -2,94 +2,97 @@
     padding: 50px 0 100px 0;
     @include setBackgroundColor($default-gray-dark);
 
-    .contact-wrapper {
-        height: 250px;
-        border: 2px solid $default-color;
-        background-image: url('../../images/computer2.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
+    .container {
+        .contact-wrapper {
+            height: 250px;
+            border: 2px solid $default-color;
+            background-image: url('../../images/computer2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
 
-        .overlay {
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 250px - 4px;
-            background-color: rgba(0, 0, 0, 0.8);
-            @include setDisplay(flex, nowrap, center, center);
-
-            .contact-title {
-                width: 300px;
-                font-weight: 200;
-                font-size: 1.8rem;
-                color: $default-white;
-                padding: 50px;
-                text-align: left;
-                border-right: 2px solid $default-color;
-
-                span {
-                    display: block;
-                    margin-top: 20px;
-                    font-weight: 700;
-                    font-size: 2.4rem;
-                    color: $default-color;
-                }
-            }
-
-            .contact-body {
+            .overlay {
                 width: 100%;
-                padding: 50px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 250px - 4px;
+                background-color: rgba(0, 0, 0, 0.8);
                 @include setDisplay(flex, nowrap, center, center);
 
-                .email {
-                    width: 600px;
+                .contact-title {
+                    font-weight: 200;
+                    font-size: 1.8rem;
+                    color: $default-white;
                     padding: 50px;
+                    text-align: left;
+                    border-right: 2px solid $default-color;
 
-                    h3 {
-                        font-weight: 200;
-                        color: $default-white;
-                        padding-bottom: 25px;
-                    }
-
-                    i {
-                        font-size: 1.2rem;
-                        color: $default-color;
-                    }
-
-                    a {
-                        text-decoration: none;
+                    span {
+                        display: block;
+                        margin-top: 10px;
                         font-weight: 700;
+                        font-size: 2.4rem;
                         color: $default-color;
-                        margin-top: 30px;
-                        font-size: 1.2rem;
                     }
                 }
 
-                .social-media {
-                    @include setDisplay(flex, wrap, center, center);
-                    padding: 50px;
+                .contact-body {
+                    width: 100%;
+                    padding: 0 50px;
+                    @include setDisplay(flex, nowrap, center, center);
 
-                    h3 {
-                        font-weight: 200;
-                        color: $default-white;
-                    }
+                    .email {
+                        width: 100%;
+                        text-align: center;
 
-                    .social-media-actions {
-                        @include setDisplay(flex, wrap, center, center);
-                        flex-direction: row;
-                        .social {
-                            @extend %social-buttons;
-
-                            i {
-                                color: $default-white;
-                                font-size: 2rem;
-                            }
+                        h3 {
+                            font-weight: 200;
+                            color: $default-white;
+                            padding-bottom: 25px;
                         }
 
-                        .social:nth-of-type(2) {
-                            margin: 0 30px;
+                        i {
+                            font-size: 1.2rem;
+                            color: $default-color;
+                            margin-right: 8px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 700;
+                            color: $default-color;
+                            margin-top: 30px;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .social-media {
+                        @include setDisplay(flex, wrap, center, center);
+                        padding: 50px;
+
+                        h3 {
+                            flex-wrap: nowrap;
+                            font-weight: 200;
+                            color: $default-white;
+                        }
+
+                        .social-media-actions {
+                            @include setDisplay(flex, nowrap, center, center);
+                            flex-direction: row;
+                            .social {
+                                @extend %social-buttons;
+
+                                i {
+                                    color: $default-white;
+                                    font-size: 2rem;
+                                }
+                            }
+
+                            .social:nth-of-type(2) {
+                                margin: 0 30px;
+                            }
                         }
                     }
                 }

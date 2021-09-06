@@ -49,7 +49,7 @@ body {
   background-color: #c76502;
 }
 
-.profile .container .profile-info .social-media .social, .contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social {
+.profile .container .profile-info .social-media .social, .contact .container .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social {
   margin: 35px 0;
   width: 55px;
   height: 55px;
@@ -63,7 +63,7 @@ body {
   transition: transform 800ms ease;
 }
 
-.profile .container .profile-info .social-media .social:hover, .contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social:hover {
+.profile .container .profile-info .social-media .social:hover, .contact .container .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social:hover {
   transform: scale(1.2);
 }
 
@@ -616,7 +616,7 @@ body {
   background-color: #1a1a1a;
 }
 
-.contact .contact-wrapper {
+.contact .container .contact-wrapper {
   height: 250px;
   border: 2px solid #c76502;
   background-image: url("../../images/computer2.jpg");
@@ -626,7 +626,7 @@ body {
   position: relative;
 }
 
-.contact .contact-wrapper .overlay {
+.contact .container .contact-wrapper .overlay {
   width: 100%;
   position: absolute;
   top: 0;
@@ -639,8 +639,7 @@ body {
   align-items: center;
 }
 
-.contact .contact-wrapper .overlay .contact-title {
-  width: 300px;
+.contact .container .contact-wrapper .overlay .contact-title {
   font-weight: 200;
   font-size: 1.8rem;
   color: #fff;
@@ -649,40 +648,41 @@ body {
   border-right: 2px solid #c76502;
 }
 
-.contact .contact-wrapper .overlay .contact-title span {
+.contact .container .contact-wrapper .overlay .contact-title span {
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 700;
   font-size: 2.4rem;
   color: #c76502;
 }
 
-.contact .contact-wrapper .overlay .contact-body {
+.contact .container .contact-wrapper .overlay .contact-body {
   width: 100%;
-  padding: 50px;
+  padding: 0 50px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.contact .contact-wrapper .overlay .contact-body .email {
-  width: 600px;
-  padding: 50px;
+.contact .container .contact-wrapper .overlay .contact-body .email {
+  width: 100%;
+  text-align: center;
 }
 
-.contact .contact-wrapper .overlay .contact-body .email h3 {
+.contact .container .contact-wrapper .overlay .contact-body .email h3 {
   font-weight: 200;
   color: #fff;
   padding-bottom: 25px;
 }
 
-.contact .contact-wrapper .overlay .contact-body .email i {
+.contact .container .contact-wrapper .overlay .contact-body .email i {
   font-size: 1.2rem;
   color: #c76502;
+  margin-right: 8px;
 }
 
-.contact .contact-wrapper .overlay .contact-body .email a {
+.contact .container .contact-wrapper .overlay .contact-body .email a {
   text-decoration: none;
   font-weight: 700;
   color: #c76502;
@@ -690,7 +690,7 @@ body {
   font-size: 1.2rem;
 }
 
-.contact .contact-wrapper .overlay .contact-body .social-media {
+.contact .container .contact-wrapper .overlay .contact-body .social-media {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -698,25 +698,26 @@ body {
   padding: 50px;
 }
 
-.contact .contact-wrapper .overlay .contact-body .social-media h3 {
+.contact .container .contact-wrapper .overlay .contact-body .social-media h3 {
+  flex-wrap: nowrap;
   font-weight: 200;
   color: #fff;
 }
 
-.contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions {
+.contact .container .contact-wrapper .overlay .contact-body .social-media .social-media-actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-.contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social i {
+.contact .container .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social i {
   color: #fff;
   font-size: 2rem;
 }
 
-.contact .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social:nth-of-type(2) {
+.contact .container .contact-wrapper .overlay .contact-body .social-media .social-media-actions .social:nth-of-type(2) {
   margin: 0 30px;
 }
 
@@ -735,11 +736,44 @@ footer .container {
   align-items: center;
 }
 
+footer .container p {
+  padding: 0 20px;
+}
+
 @media screen and (max-width: 1280px) {
   .portfolio .container .portfolio-title {
     text-align: center;
   }
   .skills .container .skills-title {
+    text-align: center;
+  }
+  .contact .container .contact-wrapper {
+    height: 305px;
+  }
+  .contact .container .contact-wrapper .overlay {
+    height: 301px;
+    flex-wrap: wrap;
+  }
+  .contact .container .contact-wrapper .overlay .contact-title {
+    width: 100%;
+    padding: 20px 0 0 0;
+    text-align: center;
+    border: 0;
+  }
+  .contact .container .contact-wrapper .overlay .contact-body {
+    padding: 20px;
+    height: auto;
+  }
+  .contact .container .contact-wrapper .overlay .contact-body .email,
+  .contact .container .contact-wrapper .overlay .contact-body .social-media {
+    width: 50%;
+    padding: 0;
+  }
+  .contact .container .contact-wrapper .overlay .contact-body .email {
+    text-align: center;
+  }
+  .contact .container .contact-wrapper .overlay .contact-body .social-media h3 {
+    width: 100%;
     text-align: center;
   }
 }
@@ -796,6 +830,36 @@ footer .container {
   .profile .container .profile-info h2 {
     font-size: 2.7rem;
   }
+  .contact .container .contact-wrapper {
+    height: 400px;
+  }
+  .contact .container .contact-wrapper .overlay {
+    height: 396px;
+  }
+  .contact .container .contact-wrapper .overlay .contact-body {
+    flex-direction: column;
+  }
+  .contact .container .contact-wrapper .overlay .contact-body .email {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .contact .container .contact-wrapper .overlay .contact-body .email i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .portfolio .container .portfolio-body {
+    height: 1350px;
+  }
+  .portfolio .container .portfolio-body .overlay {
+    height: calc(1350px - 4px);
+  }
+  footer .container {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -808,12 +872,6 @@ footer .container {
   #home .menu-desktop .container .navbar-desktop li a {
     padding: 30px 10px;
     font-size: 0.9rem;
-  }
-  .portfolio .container .portfolio-body {
-    height: 1350px;
-  }
-  .portfolio .container .portfolio-body .overlay {
-    height: calc(1350px - 4px);
   }
 }
 
