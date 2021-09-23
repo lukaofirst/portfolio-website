@@ -9,6 +9,7 @@ footer {
         @include setDisplay(flex, wrap, space-between, center);
 
         p {
+            text-align: center;
             padding: 0 20px;
         }
     }

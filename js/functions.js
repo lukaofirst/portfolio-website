@@ -7,15 +7,14 @@ class onScroll {
         var prevScrollpos = window.pageYOffset;
 
         window.onscroll = () => {
-            
-        var currentScrollPos = window.pageYOffset;
-            if(prevScrollpos > currentScrollPos){
-                this.menuDesktop.style.top = "0";
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                this.menuDesktop.style.top = '0';
             } else {
-                this.menuDesktop.style.top = "-99.39px";
+                this.menuDesktop.style.top = '-99.39px';
             }
-                prevScrollpos = currentScrollPos;
-        }
+            prevScrollpos = currentScrollPos;
+        };
     }
 }
 
@@ -33,7 +32,9 @@ class windowReload {
 
 class hamburgerMenu {
     constructor() {
-        this.navToggle = document.querySelector('.menu-mobile .menu-mobile-nav');
+        this.navToggle = document.querySelector(
+            '.menu-mobile .menu-mobile-nav'
+        );
         this.nav = document.querySelector('.menu-mobile .navbar-mobile');
     }
 
@@ -43,9 +44,9 @@ class hamburgerMenu {
 
             this.navToggle.classList.toggle('expanded');
             this.nav.classList.toggle('expanded');
-        }
+        };
 
-        this.navToggle.addEventListener('click', e => menuToggle(e));
+        this.navToggle.addEventListener('click', (e) => menuToggle(e));
     }
 }
 
@@ -63,16 +64,14 @@ class openProjects {
     }
 }
 
-const initScroll = new onScroll;
-const initReload = new windowReload;
-const initHamburger = new hamburgerMenu;
-const initProjects = new openProjects;
-
+const initScroll = new onScroll();
+const initReload = new windowReload();
+const initHamburger = new hamburgerMenu();
+const initProjects = new openProjects();
 
 initScroll.scrollSpy();
 initReload.reloadPage();
-initHamburger.doToggle();
-initProjects.openLinks("https://lukaofirst.github.io/instagram-clone/", "https://lukaofirst.github.io/spotify-clone/", "https://lukaofirst.github.io/tinder-clone/");
-
+//initHamburger.doToggle();
+//initProjects.openLinks("https://lukaofirst.github.io/instagram-clone/", "https://lukaofirst.github.io/spotify-clone/", "https://lukaofirst.github.io/tinder-clone/");
 
 AOS.init();

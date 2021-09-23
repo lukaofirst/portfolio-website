@@ -238,6 +238,32 @@
 }
 
 @media screen and (max-width: 500px) {
+    .portfolio {
+        .container {
+            .portfolio-title {
+                p {
+                    font-size: 2rem;
+                }
+
+                span {
+                    font-size: 3.2rem;
+                }
+            }
+        }
+    }
+
+    .skills {
+        .container {
+            p {
+                font-size: 2rem;
+            }
+
+            span {
+                font-size: 3.2rem;
+            }
+        }
+    }
+
     .about {
         padding: 50px 0;
 
@@ -259,6 +285,58 @@
 
                         span {
                             font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            .contact-wrapper {
+                height: 425px;
+
+                .overlay {
+                    height: 425px - 4px;
+
+                    .contact-body {
+                        .email {
+                            a {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            justify-content: center;
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contact {
+        .container {
+            .contact-wrapper {
+                .overlay {
+                    .contact-body {
+                        .email {
+                            h3 {
+                                font-size: 1rem;
+                            }
+
+                            a {
+                                font-size: 0.8rem;
+                            }
                         }
                     }
                 }

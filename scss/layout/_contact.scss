@@ -69,6 +69,7 @@
                     }
 
                     .social-media {
+                        width: 100%;
                         @include setDisplay(flex, wrap, center, center);
                         padding: 50px;
 
