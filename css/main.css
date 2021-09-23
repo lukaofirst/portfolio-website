@@ -134,97 +134,144 @@ body {
   margin-left: auto;
 }
 
-.menu-mobile-nav {
-  user-select: none;
-  cursor: pointer;
-  height: 2rem;
-  left: 2.2rem;
+.menu-wrap {
   position: fixed;
-  top: 2rem;
-  width: 3rem;
-  z-index: 2;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
 }
 
-.menu-mobile-nav .menu-mobile-nav-toggle-bar,
-.menu-mobile-nav .menu-mobile-nav-toggle-bar::after,
-.menu-mobile-nav .menu-mobile-nav-toggle-bar::before {
+.menu-wrap .toggler {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 0.5s ease;
-  background: #c76502;
-  content: '';
-  height: 0.4rem;
-  width: 100%;
-  border-radius: 1.5px;
-}
-
-.menu-mobile-nav .menu-mobile-nav-toggle-bar {
-  margin-top: 0;
-}
-
-.menu-mobile-nav .menu-mobile-nav-toggle-bar::after {
-  margin-top: 0.8rem;
-}
-
-.menu-mobile-nav .menu-mobile-nav-toggle-bar::before {
-  margin-top: -0.8rem;
-}
-
-.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar {
-  background: transparent;
-}
-
-.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after,
-.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::before {
-  background: #c76502;
-  margin-top: 0;
-}
-
-.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::after {
-  transform: rotate(45deg);
-}
-
-.menu-mobile-nav.expanded .menu-mobile-nav-toggle-bar::before {
-  transform: rotate(-45deg);
-}
-
-.navbar-mobile {
-  transition: left 0.5s ease;
-  background: #1a1a1a;
-  cursor: pointer;
-  font-size: 2rem;
-  font-weight: 300;
-  height: 100vh;
-  left: -20rem;
-  padding: 6rem 2rem 2rem 2rem;
-  position: fixed;
   top: 0;
-  width: 20rem;
-  z-index: 1;
-  box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
-  -webkit-box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 3px -1px 11px 2px rgba(0, 0, 0, 0.16);
-  border-right: 3px solid #c76502;
-}
-
-.navbar-mobile.expanded {
   left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
 }
 
-.navbar-mobile li {
-  list-style: none;
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: #c76502;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 18vh;
 }
 
-.navbar-mobile li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: normal;
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Top and Bottom Lines */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turn Lines into X */
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.75s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  width: 80vh;
+  height: 80vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vh;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
   color: #c76502;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
 
 .profile {
