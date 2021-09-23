@@ -5,10 +5,7 @@
     .about-wrapper {
         height: 340px;
         border: 2px solid $default-color;
-        background-image: url('../../images/computer2.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-color: $default-gray-light;
         position: relative;
 
         .overlay {
@@ -16,7 +13,7 @@
             top: 0;
             left: 0;
             height: 340px - 4px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0);
             @include setDisplay(flex, nowrap, center, center);
 
             .about-title {

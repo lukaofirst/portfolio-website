@@ -355,10 +355,7 @@ body {
 .about .about-wrapper {
   height: 340px;
   border: 2px solid #c76502;
-  background-image: url("../../images/computer2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #2a2a2a;
   position: relative;
 }
 
@@ -367,7 +364,7 @@ body {
   top: 0;
   left: 0;
   height: 336px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -444,10 +441,7 @@ body {
   max-width: 800px;
   height: 730px;
   border: 2px solid #c76502;
-  background-image: url("../../images/computer1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #2a2a2a;
   position: relative;
 }
 
@@ -457,7 +451,7 @@ body {
   top: 0;
   left: 0;
   height: calc(730px - 4px);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -670,10 +664,7 @@ body {
 .contact .container .contact-wrapper {
   height: 250px;
   border: 2px solid #c76502;
-  background-image: url("../../images/computer2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #2a2a2a;
   position: relative;
 }
 
@@ -683,7 +674,7 @@ body {
   top: 0;
   left: 0;
   height: 246px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
